@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="post" id="form" class="form">
+            <div class="form-box">
+                <label for="">Nome completo</label>
+                <input type="text" name="name" id="name" pattern="[a-zA-Z].{1,}" title="O nome deve conter apenas letra e ter mais de 1 letras" required>
+            </div>
+            <div class="form-box">
+                <label for="">Email</label>
+                <input type="email" name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$" autocomplete="off" required>
+            </div>
+            <div class="form-box">
+                <label for="">Username</label>
+                <input type="text" name="usarname" id="usarname" pattern="[a-zA-Z0-9].{2,}" title="No mínimo três letras ou número" required>
+            </div>
+            <div class="form-box">
+                <label for="">Senha</label>
+                <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Deve conter um número, uma letra maiúscula e no mínimo 8 caracteres" required>
+            </div>
+            <div class="form-box">
+                <label for="">Página inicial</label>
+                <input type="url" name="site" id="site" pattern="https?://.+" title="Incluir http://" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
